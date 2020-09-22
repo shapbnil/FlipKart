@@ -33,6 +33,7 @@ public class Common {
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
 	}
 
 	public void clickObj(WebDriver driver, By by) {

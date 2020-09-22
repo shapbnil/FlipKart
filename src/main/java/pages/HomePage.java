@@ -90,7 +90,7 @@ public class HomePage extends Common {
 		clickObj(driver, searchEnter);
 		
 	}
-	//validate iPhone functionlity
+	//validate iPhone functionality
 	public void appleIphone() throws InterruptedException {
 		String parent=driver.getWindowHandle();
 		String child=null;
@@ -115,7 +115,7 @@ public class HomePage extends Common {
 		clickObj(driver, place_order);
 		
 		Thread.sleep(3000);
-		
+		// SwithTo Parent Window
 		driver.switchTo().window(parent);
 		driver.findElement(search).clear();
 		enterText(driver, search, "sumsung");
